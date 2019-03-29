@@ -1,0 +1,26 @@
+<!--page/component/choice/choice.wxml-->
+
+
+<view class="big_box" bindtap='checkd' wx:for="{{address}}" wx:key="index" data-line="{{index}}">
+  <view>
+    <view class='Info'>
+      <text>{{item.name}}</text>
+      <text class='phone'>{{item.phone}}</text>
+    </view>
+
+    <view class='address'>
+      {{item.add}}
+    </view>
+  </view>
+  <view class='ra'>
+    <radio class="radio" checked="{{isflag == index ? true : ''}}" disabled='disabled'></radio>
+  </view>
+</view>
+
+
+
+<view class='add'>
+  <navigator url='../address/address'>
+    <text class='init'>+添加地址</text>
+  </navigator>
+</view>

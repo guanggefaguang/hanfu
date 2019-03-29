@@ -1,0 +1,14 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <!-- <view wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item" style='color:red;'>{{index + 1}}. {{log}}</text>
+  </view> -->
+  <view wx:for="{{item}}" data-index="{{index}}" data-name="{{item.name}}" bindtap='Link' wx:key="{{item.index}}">
+    <text style='color:{{activyIndex==index?"red": "#333"}}'>{{item.name}}>{{index+1}}</text>
+  </view>
+  <input type='text' placeholder='请输入' value='{{password}}' data-prop="password" bindinput='int'/>
+  <input type='text' placeholder='请输入' value='{{username}}' data-prop="username" bindinput='int'/>
+
+
+  <button bindtap='href'>点击跳转</button>
+</view>

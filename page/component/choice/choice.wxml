@@ -1,0 +1,16 @@
+<!--page/component/choice/choice.wxml-->
+<view class="big_box" wx:for="{{address}}" wx:key data-id='{{item.id}}'>
+  <view class='Info'>
+    <text>{{item.username}}</text>
+    <text>{{item.phone}}</text>
+  </view>
+  <view class='address'>
+    <text>{{item.province}} {{item.city}} {{item.area}} {{item.address}}</text>
+  </view>
+</view>
+
+<view class='add'>
+  <navigator url='../address/address'>
+    <text class='init'>+添加地址</text>
+  </navigator>
+</view>

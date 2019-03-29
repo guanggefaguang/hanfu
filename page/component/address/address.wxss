@@ -1,0 +1,42 @@
+@import '../../common/common.wxss';
+
+.form-box {
+}
+
+.form-box input {
+  height: 90rpx;
+  border-bottom: 1rpx solid #ededed;
+  color: #999;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+}
+
+.form-box .input-placeholder {
+  color: #aaa;
+}
+
+.form-box button {
+  display: block;
+  width: 70%;
+  height: 80rpx;
+  background-color: #ab956d;
+  color: #fff;
+  font-size: 36rpx;
+  line-height: 80rpx;
+  margin: 20rpx auto;
+  letter-spacing: 3rpx;
+}
+
+.section {
+  width: 100%;
+  border-bottom: 1rpx solid #ededed;
+  padding-left: 30rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #999;
+}
+
+.picker, .detailed {
+  padding: 7rpx 0 0 0;
+  color: #999;
+}

@@ -1,0 +1,129 @@
+/* page/component/shopCar/shopCar.wxss */
+
+.Buy {
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 100rpx;
+  background: #ab956d;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx;
+  box-sizing: border-box;
+  align-items: center;
+  align-content: center;
+}
+
+.shopCar {
+  box-sizing: border-box;
+  width: 100%;
+  height: 220rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx;
+  align-content: center;
+  background: #fff;
+  align-items: center;
+  position: relative;
+}
+
+.shopCar::after {
+  content: '';
+  width: 100%;
+  height: 1rpx;
+  transform: scaleY(0.5);
+  position: absolute;
+  bottom: 0rpx;
+  left: 0rpx;
+  background: #ccc;
+}
+
+.Shop {
+  width: 180rpx;
+  height: 180rpx;
+  margin-left: 10rpx;
+}
+
+.shop_left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.shop_title {
+  font-size: 30rpx;
+}
+
+.shop_add {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.price {
+  width: 170rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.but {
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  border: 1rpx solid #e9e9e9;
+}
+
+.inp {
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  font-size: 34rpx;
+  color: #333;
+}
+
+.shop_all {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.shop_money {
+  color: #ff525c;
+}
+
+/*checkbox 选项框大小  */
+
+.shop_big checkbox .wx-checkbox-input {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  margin-left: 10rpx;
+}
+
+/*checkbox选中后样式  */
+
+.shop_big checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #ff525c;
+}
+
+/*checkbox选中后图标样式  */
+
+.shop_big checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}

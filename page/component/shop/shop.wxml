@@ -1,0 +1,13 @@
+<!--page/component/shop/shop.wxml-->
+<navigator url='./details/details'>
+  <view class='shopItem'>
+    <image src="../../../image/one.jpg" class='ShopImg' />
+    <view class='Name'>
+      <text class='Title'>生落叶果树乔木叶子卵形花多白色果子多汁可食8-9月间果实成熟时采收，鲜用或切片晒干。主要品种有秋子梨、白梨、沙梨、洋梨四种</text>
+    </view>
+    <view class='Number'>
+      <text class="Color">￥200</text>
+      <text>130人付款</text>
+    </view>
+  </view>
+</navigator>

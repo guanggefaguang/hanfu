@@ -1,0 +1,59 @@
+<view class="main">
+  <view class="goods-box">
+
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='goods-thumb' indicator-dots="true" indicator-color="{{beforeColor}}" indicator-active-color="{{afterColor}}">
+      <block wx:for="{{goods.picture}}" wx:key>
+        <swiper-item>
+          <image src="{{item.image}}" class='Imge' />
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class="goods-title">{{goods.title}}</view>
+    <view class="goods-price">
+      <!-- <text wx:if="{{goods.none}}" class='Have'>有货</text>
+      <text wx:else class='None'>无货</text> -->
+
+      <text class='Have'>销量:{{goods.buy_num}}</text>
+      <!-- <text wx:else class='None'>无货</text> -->
+
+      <text class='Look'>￥{{goods.price}}</text>
+    </view>
+  </view>
+
+
+  <view class='Bottom'>
+    <view class='Home_title'>
+      <text class='Home_title'>商品详情</text>
+      <view class='xie'></view>
+    </view>
+
+    <image src='../../../image/message.png' class='Dtal' />
+
+    <view class='Home_title'>
+      <text class='Home_title'>填写信息</text>
+      <view class='xie'></view>
+    </view>
+
+    <view class='Tile'>
+      *如果需要您的文字信息，请填写到下方。如照片信息其他等，请在付款之后联系客服发送。
+    </view>
+
+    <textarea placeholder='请在这里输入' class='Zi'></textarea>
+  </view>
+
+
+
+</view>
+
+<view class="BottomTab">
+  <view class='bottomBi'>
+    <navigator url="../../../page/component/index" open-type='switchTab'>
+      <image src='../../../image/homeIndex.png' class='homeI'></image>
+    </navigator>
+    <button class='service' open-type="contact">
+      <image src='../../../image/service.png' class='serviceImg'></image>
+    </button>
+  </view>
+  <button class='Buy' bindtap='Gohref'>立即购买</button>
+</view>

@@ -1,0 +1,21 @@
+<view class="main">
+  <view class="form-box">
+    <form bindsubmit="formSubmit">
+      <input value="{{address.name}}" name="username" placeholder="姓名" placeholder-style="margin:7rpx 0 0 12rpx;color: #999" />
+      <input type="number" name="phone" value="{{address.phone}}" placeholder="电话号码" placeholder-style="margin:7rpx 0 0 12rpx;color: #999" />
+      <view class="section">
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <view class="picker" wx:if="{{region.length>0}}">
+            {{region[0]}} {{region[1]}} {{region[2]}}
+          </view>
+          <view class="picker" wx:else>
+            请选择地址
+          </view>
+        </picker>
+      </view>
+      <input class='detailed' name="address" value="{{address.detail}}" placeholder="详细地址" placeholder-style="margin:7rpx 0 0 12rpx;color: #999" />
+      <button form-type="submit">保存</button>
+    </form>
+
+  </view>
+</view>

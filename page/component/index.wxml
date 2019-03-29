@@ -1,0 +1,30 @@
+<view class="main">
+  <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true" bindtap="goview" class='swiper-box' indicator-color="{{beforeColor}}" indicator-active-color="{{afterColor}}">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+      <swiper-item>
+        <image src="{{api}}{{item.url}}" class='Img' />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='Home_title'>
+    <text class='Home_title'>最新推荐</text>
+    <view class='xie'></view>
+  </view>
+  <view class='shop'>
+    <view url='./details/details' wx:for="{{Shop}}" wx:key bindtap='Godetails' data-id='{{item.id}}'>
+      <view class='shopItem'>
+        <image src="{{item.thumb}}" class='ShopImg' />
+        <view class='Name'>
+          <text class='Title'>{{item.title}}</text>
+        </view>
+        <view class='Number'>
+          <text class="Color">￥{{item.price}}</text>
+          <text>{{item.buy_num}}人付款</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+
+</view>
