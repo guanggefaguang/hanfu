@@ -1,4 +1,4 @@
-//app.js
+//addpp.js
 App({
   globalData: {
     appid: 'wx156a78adcd18d3ad',
