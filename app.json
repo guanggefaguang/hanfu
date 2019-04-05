@@ -14,13 +14,13 @@
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "创意",
-    "navigationBarBackgroundColor": "#AB956D",
+    "navigationBarBackgroundColor": "#05a67b",
     "backgroundColor": "#f5f5f5",
     "enablePullDownRefresh": true
   },
   "tabBar": {
     "color": "#b7b7b7",
-    "selectedColor": "#AB956D",
+    "selectedColor": "#05a67b",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [

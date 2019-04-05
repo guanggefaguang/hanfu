@@ -6,7 +6,7 @@
   left: 0rpx;
   width: 100%;
   height: 100rpx;
-  background: #ab956d;
+  background: #05a67b;
   z-index: 10;
   display: flex;
   justify-content: space-between;
@@ -111,7 +111,7 @@
 /*checkbox选中后样式  */
 
 .shop_big checkbox .wx-checkbox-input.wx-checkbox-input-checked {
-  background: #ff525c;
+  background: red;
 }
 
 /*checkbox选中后图标样式  */
@@ -126,4 +126,9 @@
   background: transparent;
   transform: translate(-50%, -50%) scale(1);
   -webkit-transform: translate(-50%, -50%) scale(1);
+}
+.election{
+  color: #fff;
+  margin-left: 10rpx;
+
 }

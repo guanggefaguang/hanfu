@@ -21,5 +21,6 @@
 <view class='Buy shop_big'>
   <checkbox-group bindchange="allChange">
     <checkbox checked='{{allflag}}' />
+      <text class="election">全选</text>
   </checkbox-group>
 </view>

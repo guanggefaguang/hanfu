@@ -19,7 +19,7 @@
   display: block;
   width: 70%;
   height: 80rpx;
-  background-color: #ab956d;
+  background-color: #ff464e;
   color: #fff;
   font-size: 36rpx;
   line-height: 80rpx;

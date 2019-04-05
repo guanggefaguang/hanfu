@@ -20,8 +20,8 @@ page, .main {
 }
 
 .categroy-left .cate-list.on {
-  color: #ab956d;
-  border-color: #ab956d;
+  color: #05a67b;
+  border-color: #05a67b;
 }
 
 .categroy-right {
@@ -49,7 +49,7 @@ page, .main {
   line-height: 30rpx;
   padding: 30rpx 0 55rpx;
   text-align: center;
-  color: #ab956d;
+  color: #05a67b;
   font-size: 28rpx;
 }
 
@@ -60,7 +60,7 @@ page, .main {
   content: '';
   width: 70rpx;
   height: 4rpx;
-  background: #ab956d;
+  background: #05a67b;
 }
 
 .cate-title::after {
