@@ -7,27 +7,38 @@
       </view>
     </view>
     <button wx:if="{{!thumb}}" class='userinfo-btn' open-type='getUserInfo' bindgetuserinfo='getuserinfo'>
-      {{talk?language.oldfont("点击微信授权"):"点击微信授权"}}
+      {{talk?language.oldfont("登陆"):"登陆"}}
     </button>
-    <button class="about" open-type="contact">
-      <image src="../../../image/call.png" class='Call'></image>客服
-    </button>
+    <!-- <button class="about" open-type="contact">
+      <image src="../../../image/service.png" class='Call'></image>客服
+    </button> -->
+
   </view>
   <view class="address-box">
+    <view class="address-manage" open-type="contact">
+      <navigator url="../orderNumber/orderNumber" class='dz'>我的订单</navigator>
+    </view>
+
     <view class="address-manage">
-      <navigator url="/page/component/choice/choice" class='dz'>地址管理</navigator>
+      <navigator url="/page/component/choice/choice" class='dz'>收货地址</navigator>
     </view>
-  </view>
-  <view class="orders-box">
-    <view class="orders">我的订单</view>
-    <view class="orders-list" wx:for="{{orders}}" wx:key="index">
-      <view class="orders-detail">
-        <image src="{{item.thumb}}"></image>
-        <view class="commodity">{{item.name}}</view>
-        <view class="num">{{item.count}}(件)</view>
-        <view class="deliver">收货地址:{{item.deliver}}</view>
-        <view class="orders-number">订单编号：{{item.number}}</view>
-      </view>
+
+    <view class="address-manage" open-type="contact">
+      <navigator class='dz'>客服</navigator>
     </view>
+
+
+  <view class="address-manage" open-type="contact">
+      <navigator url="/page/component/choice/choice" class='dz'>用户反馈</navigator>
+    </view>
+
+    <view class="address-manage" open-type="contact">
+      <navigator url="/page/component/choice/choice" class='dz'>关于我们</navigator>
+    </view>
+
+
+
   </view>
+ 
+
 </view>
