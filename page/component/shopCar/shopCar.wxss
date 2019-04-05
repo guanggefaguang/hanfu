@@ -111,7 +111,7 @@
 /*checkbox选中后样式  */
 
 .shop_big checkbox .wx-checkbox-input.wx-checkbox-input-checked {
-  background: red;
+  background: #05a67b;
 }
 
 /*checkbox选中后图标样式  */
@@ -127,8 +127,8 @@
   transform: translate(-50%, -50%) scale(1);
   -webkit-transform: translate(-50%, -50%) scale(1);
 }
-.election{
+
+.election {
   color: #fff;
   margin-left: 10rpx;
-
 }

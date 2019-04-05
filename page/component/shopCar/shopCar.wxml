@@ -1,26 +1,28 @@
-<checkbox-group bindchange="checkboxChange" class="shop_big" style="margin-bottom:120rpx">
-    <view class='shopCar' wx:for="{{items}}" wx:key>
-      <view class='shop_left'>
-        <checkbox value="{{item.name}}" checked="{{item.checked}}" />
-        <image src="../../../image/three.jpg" class='Shop'></image>
-      </view>
-      <view class='shop_all'>
-        <text class='shop_title'>Adidas三叶草女鞋贝壳头板鞋小白鞋金标2018款式史密斯</text>
-        <view class='shop_add'>
-          <text class='shop_money'>￥499.00</text>
-          <view class='price'>
-            <view class='but'>-</view>
-            <input type='number' value='1' class='inp'></input>
-            <view class='but'>+</view>
-          </view>
+<view style='margin-bottom:120rpx'>
+  <view class='shopCar' wx:for="{{items}}" wx:key>
+    <view class='shop_left'>
+      <checkbox-group bindchange="checkboxChange" class="shop_big" data-id="{{index}}">
+        <checkbox value='{{item.name}}' checked="{{item.checked}}" />
+      </checkbox-group>
+      <image src="../../../image/three.jpg" class='Shop'></image>
+    </view>
+    <view class='shop_all'>
+      <text class='shop_title'>Adidas三叶草女鞋贝壳头板鞋小白鞋金标2018款式史密斯</text>
+      <view class='shop_add'>
+        <text class='shop_money'>￥{{item.price}}</text>
+        <view class='price'>
+          <view class='but' bindtap='ReduceNum' data-id='{{index}}'>-</view>
+          <input type='number' value='{{item.num}}' class='inp' bindinput="getVal"></input>
+          <view class='but' bindtap='AddNum' data-id='{{index}}'>+</view>
         </view>
       </view>
     </view>
-</checkbox-group>
+  </view>
+</view>
 
 <view class='Buy shop_big'>
   <checkbox-group bindchange="allChange">
-    <checkbox checked='{{allflag}}' />
-      <text class="election">全选</text>
+    <checkbox checked='{{Allchecked}}' />
+    <text class="election">全选</text> {{totalPrice}}
   </checkbox-group>
 </view>
