@@ -10,11 +10,13 @@
     "page/component/category/category",
     "page/component/cart/cart",
     "page/component/list/list",
-    "page/component/choice/choice"
+    "page/component/choice/choice",
+    "page/component/feedback/feedback",
+        "page/component/about/about"
   ],
   "window": {
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "创意",
+    "navigationBarTitleText": "首页",
     "navigationBarBackgroundColor": "#05a67b",
     "backgroundColor": "#f5f5f5",
     "enablePullDownRefresh": true

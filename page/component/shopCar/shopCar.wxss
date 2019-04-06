@@ -160,29 +160,35 @@
   line-height: 100rpx;
 }
 
-.Settlement {
-  width: 230rpx;
-  /* background: red; */
-  background: #f55636;
+.Settlement,.Settlement2 {
+  width: 200rpx;
+  background: #05a67b;
   height: 100rpx;
   color: #fff;
-  /* float: right; */
+  float: right;
   /* display: flex; */
   overflow: hidden;
   line-height: 100rpx;
   text-align: center;
+  font-size: 35rpx;
+}
+.Settlement{
+  float: left;
+  background: #59cfb0;
 }
 
 .checkradio {
   float: left;
-  line-height: 100rpx;
+  line-height: 90rpx;
+  margin-left: 20rpx;
 }
 
 .number {
   color: #333;
   display: block;
   float: left;
-  font-size: 30rpx;
+  width: 290rpx;
+  font-size: 35rpx;
   line-height: 100rpx;
 }
 .mon{

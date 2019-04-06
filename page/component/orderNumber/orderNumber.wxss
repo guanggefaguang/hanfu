@@ -151,8 +151,8 @@
   line-height: 65rpx;
   font-size: 30rpx;
   margin: 8rpx;
-  background: #f55636;
-  border:1rpx solid #f55636;
+  background: #05a67b;
+  border:1rpx solid #05a67b;
   overflow: hidden;
   border-radius: 15rpx;
   float: left;

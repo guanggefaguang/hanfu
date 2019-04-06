@@ -1,33 +1,33 @@
 <view class='bag'>
-<view style='margin-bottom:120rpx;'>
-  <view class='shopCar' wx:for="{{items}}" wx:key>
-    <view class='shop_left'>
-      <checkbox-group bindchange="checkboxChange" class="shop_big" data-id="{{index}}">
-        <checkbox value='{{item.name}}' checked="{{item.checked}}" />
-      </checkbox-group>
-      <image src="../../../image/three.jpg" class='Shop'></image>
-    </view>
-    <view class='shop_all'>
-      <text class='shop_title'>Adidas三叶草女鞋贝壳头板鞋小白鞋金标2018款式史密斯</text>
-      <view class='shop_add'>
-        <text class='shop_money'>￥{{item.price}}</text>
-        <view class='price'>
-          <view class='but' bindtap='ReduceNum' data-id='{{index}}'>-</view>
-          <input type='number' value='{{item.num}}' class='inp' bindinput="getVal"></input>
-          <view class='but' bindtap='AddNum' data-id='{{index}}'>+</view>
+  <view style='margin-bottom:120rpx;'>
+    <view class='shopCar' wx:for="{{items}}" wx:key>
+      <view class='shop_left'>
+        <checkbox-group bindchange="checkboxChange" class="shop_big" data-id="{{index}}">
+          <checkbox value='{{item.name}}' checked="{{item.checked}}" />
+        </checkbox-group>
+        <image src="../../../image/three.jpg" class='Shop'></image>
+      </view>
+      <view class='shop_all'>
+        <text class='shop_title'>Adidas三叶草女鞋贝壳头板鞋小白鞋金标2018款式史密斯</text>
+        <view class='shop_add'>
+          <text class='shop_money'>￥{{item.price}}</text>
+          <view class='price'>
+            <view class='but' bindtap='ReduceNum' data-id='{{index}}'>-</view>
+            <input type='number' value='{{item.num}}' class='inp' bindinput="getVal"></input>
+            <view class='but' bindtap='AddNum' data-id='{{index}}'>+</view>
+          </view>
         </view>
       </view>
     </view>
   </view>
-</view>
 
-<view class='Buy shop_big'>
-  <checkbox-group bindchange="allChange">
-    <checkbox checked='{{Allchecked}}' class="checkradio"/>
-    <text class="election">全选</text> 
-  </checkbox-group>
+  <view class='Buy shop_big'>
+    <checkbox-group bindchange="allChange">
+      <checkbox checked='{{Allchecked}}' class="checkradio" />
+    </checkbox-group>
 
-  <text class="number">合计:<text class='mon'>{{totalPrice}}</text></text>
-  <view class="Settlement" bindtap='jiesuan'>结算</view>
-</view>
+    <text class="number">合计:<text class='mon'>{{totalPrice}}</text></text>
+    <view class="Settlement" bindtap='jiesuan'>编辑</view>
+    <view class="Settlement2" bindtap='jiesuan'>结算</view>
+  </view>
 </view>

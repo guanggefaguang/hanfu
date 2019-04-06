@@ -20,7 +20,7 @@
     </view>
 
     <view class="address-manage">
-      <navigator url="/page/component/choice/choice" class='dz'>收货地址</navigator>
+      <navigator url="../choice/choice" class='dz'>收货地址</navigator>
     </view>
 
     <view class="address-manage" open-type="contact">
@@ -29,11 +29,11 @@
 
 
   <view class="address-manage" open-type="contact">
-      <navigator url="/page/component/choice/choice" class='dz'>用户反馈</navigator>
+      <navigator url="../feedback/feedback" class='dz'>用户反馈</navigator>
     </view>
 
     <view class="address-manage" open-type="contact">
-      <navigator url="/page/component/choice/choice" class='dz'>关于我们</navigator>
+      <navigator url="../about/about" class='dz'>关于我们</navigator>
     </view>
 
 

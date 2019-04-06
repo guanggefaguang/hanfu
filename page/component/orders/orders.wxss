@@ -84,7 +84,7 @@
   text-align: center;
   width: 270rpx;
   height: 100rpx;
-  background: #f55636;
+  background: #05a67b;
   color: #fff;
   border-radius: 0;
   font-size: 34rpx;

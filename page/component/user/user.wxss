@@ -74,10 +74,10 @@
 
 .address-box .address-manage {
   position: relative;
-  height: 100rpx;
+  height: 90rpx;
   border-bottom: 1rpx solid #e9e9e9;
   text-align: left;
-  font-size: 37rpx;
+  font-size: 30rpx;
 }
  .dz{
   margin-left: 50rpx;

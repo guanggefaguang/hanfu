@@ -126,11 +126,14 @@
   margin: 0rpx 90rpx 90rpx 90rpx auto;
 }
 
+
+
+/* 立即购买 */
 .Buy {
   width: 270rpx;
   height: 100rpx;
   /* background: #05a67b; */
-    background:#f55636;
+    background:#05a67b;
 
   color: #fff;
   border-radius: 0;
@@ -141,11 +144,13 @@
 
   
 }
+
+/* 加入购物车 */
 .Buy2 {
   width: 270rpx;
   height: 100rpx;
   /* background:#ff525c; */
-    background: #05a67b;
+    background: #59cfb0;
 
   color:#fff;
   text-align: center;

@@ -25,14 +25,14 @@ Page({
         value: '巴西',
         checked: false,
         num: 1,
-        price: 30
+        price: 3000
       },
       {
         name: 'JPN',
         value: '日本',
         checked: false,
         num: 1,
-        price: 40
+        price: 400000
       },
       {
         name: 'ENG',
