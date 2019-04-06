@@ -12,7 +12,7 @@
     "page/component/list/list",
     "page/component/choice/choice",
     "page/component/feedback/feedback",
-        "page/component/about/about"
+    "page/component/about/about"
   ],
   "window": {
     "navigationBarTextStyle": "white",
