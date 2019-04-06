@@ -1,4 +1,5 @@
-<view style='margin-bottom:120rpx'>
+<view class='bag'>
+<view style='margin-bottom:120rpx;'>
   <view class='shopCar' wx:for="{{items}}" wx:key>
     <view class='shop_left'>
       <checkbox-group bindchange="checkboxChange" class="shop_big" data-id="{{index}}">
@@ -22,7 +23,11 @@
 
 <view class='Buy shop_big'>
   <checkbox-group bindchange="allChange">
-    <checkbox checked='{{Allchecked}}' />
-    <text class="election">全选</text> {{totalPrice}}
+    <checkbox checked='{{Allchecked}}' class="checkradio"/>
+    <text class="election">全选</text> 
   </checkbox-group>
+
+  <text class="number">合计:<text class='mon'>{{totalPrice}}</text></text>
+  <view class="Settlement" bindtap='jiesuan'>结算</view>
+</view>
 </view>

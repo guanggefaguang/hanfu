@@ -1,5 +1,7 @@
 .bag {
   background: #f2f2f2;
+    height: 100%;
+
 }
 
 /*切换栏*/
@@ -149,8 +151,8 @@
   line-height: 65rpx;
   font-size: 30rpx;
   margin: 8rpx;
-  background: #05a67b;
-  border:1rpx solid #05a67b;
+  background: #f55636;
+  border:1rpx solid #f55636;
   overflow: hidden;
   border-radius: 15rpx;
   float: left;

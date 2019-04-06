@@ -128,6 +128,21 @@ Page({
   getVal(e) {
     console.log(e)
   },
+
+  // 结算
+  jiesuan() {
+    // wx.showModal({
+    //   title: '提示',
+    //   content: '支付功能还未开放，敬请期待',
+    //   showCancel: false
+    // })
+    wx.navigateTo({
+      url: '../orders/orders',
+    })
+  },
+
+
+
   /**
    * 生命周期函数--监听页面加载
    */

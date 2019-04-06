@@ -1,16 +1,35 @@
 /* page/component/shopCar/shopCar.wxss */
 
+.bag {
+  background: #f2f2f2;
+  height: 100%;
+  padding-top: 20rpx;
+}
+
+/* titile */
+
+.titile {
+  width: 95%;
+  margin-left: 20rpx;
+  display: block;
+  text-align: center;
+  line-height: 100rpx;
+  color: #3c3c3c;
+  font-size: 40rpx;
+}
+
 .Buy {
   position: fixed;
   bottom: 0rpx;
   left: 0rpx;
   width: 100%;
   height: 100rpx;
-  background: #05a67b;
+  border-top: 1rpx solid #f2f2f2;
+  background: #fff;
   z-index: 10;
   display: flex;
   justify-content: space-between;
-  padding: 10rpx;
+  /* padding: 10rpx; */
   box-sizing: border-box;
   align-items: center;
   align-content: center;
@@ -18,7 +37,9 @@
 
 .shopCar {
   box-sizing: border-box;
-  width: 100%;
+  width: 95%;
+  /* height: 390rpx; */
+  margin: 0 auto;
   height: 220rpx;
   display: flex;
   justify-content: space-between;
@@ -27,6 +48,8 @@
   background: #fff;
   align-items: center;
   position: relative;
+  border-radius: 30rpx;
+  margin-bottom: 20rpx;
 }
 
 .shopCar::after {
@@ -37,13 +60,14 @@
   position: absolute;
   bottom: 0rpx;
   left: 0rpx;
-  background: #ccc;
+  /* background: #ccc; */
 }
 
 .Shop {
   width: 180rpx;
   height: 180rpx;
   margin-left: 10rpx;
+  border-radius:10rpx; 
 }
 
 .shop_left {
@@ -102,8 +126,8 @@
 /*checkbox 选项框大小  */
 
 .shop_big checkbox .wx-checkbox-input {
-  width: 50rpx;
-  height: 50rpx;
+  width: 35rpx;
+  height: 35rpx;
   border-radius: 50%;
   margin-left: 10rpx;
 }
@@ -129,6 +153,38 @@
 }
 
 .election {
+  color: #333;
+  margin-left: 10rpx;
+  font-size: 35rpx;
+  float: left;
+  line-height: 100rpx;
+}
+
+.Settlement {
+  width: 230rpx;
+  /* background: red; */
+  background: #f55636;
+  height: 100rpx;
   color: #fff;
+  /* float: right; */
+  /* display: flex; */
+  overflow: hidden;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.checkradio {
+  float: left;
+  line-height: 100rpx;
+}
+
+.number {
+  color: #333;
+  display: block;
+  float: left;
+  line-height: 100rpx;
+}
+.mon{
+  color: #ff525c;
   margin-left: 10rpx;
 }

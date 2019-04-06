@@ -21,6 +21,7 @@ Page({
       id: ''
     }
   },
+  // 付款
   Gohref() {
     // wx.showModal({
     //   title: '提示',
@@ -31,6 +32,20 @@ Page({
       url: '../orders/orders',
     })
   },
+  // 进入购物车
+  Gohref2() {
+    wx.showModal({
+      title: '提示',
+      content: '加入成功',
+      showCancel: false
+    })
+    // wx.navigateTo({
+    //   url: '../shopCar/shopCar',
+    // })
+  },
+
+
+  
   onLoad(options) {
     this.getDetails(options.id)
   },

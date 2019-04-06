@@ -7,13 +7,19 @@
 }
 
 .goods-box .goods-thumb {
-  width: 100%;
+  width: 98%;
+  margin: 0 auto;
   height: 420rpx;
+    border: 1rpx solid #ededed;
+
 }
 
 .Imge {
-  width: 100%;
+  width: 98%;
+  margin: 0 auto;
   height: 420rpx;
+      border: 1rpx solid #ededed;
+
 }
 
 .goods-stock {
@@ -64,7 +70,7 @@
 .Home_title {
   margin: 20rpx 0rpx;
   text-align: center;
-  color: #ab956d;
+  color: #05a67b;
   font-size: 36rpx;
   font-weight: bold;
   letter-spacing: 4rpx;
@@ -83,7 +89,7 @@
   height: 1rpx;
   top: 50%;
   left: 180rpx;
-  background: #ab956d;
+  background: #05a67b;
 }
 
 .BottomTab {
@@ -123,14 +129,37 @@
 .Buy {
   width: 270rpx;
   height: 100rpx;
-  background: #f55636;
+  /* background: #05a67b; */
+    background:#f55636;
+
   color: #fff;
   border-radius: 0;
   font-size: 34rpx;
   line-height: 100rpx;
   position: absolute;
   right: 0;
+
+  
 }
+.Buy2 {
+  width: 270rpx;
+  height: 100rpx;
+  /* background:#ff525c; */
+    background: #05a67b;
+
+  color:#fff;
+  text-align: center;
+  border-radius: 0;
+  font-size: 34rpx;
+  line-height: 100rpx;
+  position: absolute;
+  right: 270rpx;
+
+  
+}
+
+
+
 
 .Buy::after {
   border: none;

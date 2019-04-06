@@ -10,7 +10,7 @@
   font-size: 14px;
   line-height: 25px;
   border-bottom: 1rpx solid #ededed;
-  color: #adadad;
+  color: #666666;
   box-sizing: border-box;
 }
 
@@ -23,7 +23,7 @@
   position: relative;
   height: 90rpx;
   line-height: 90rpx;
-  color: #adadad;
+  color: #666666;
   border-bottom: 20rpx solid #ededed;
   text-align: center;
 }
@@ -35,8 +35,8 @@
   content: '';
   width: 16rpx;
   height: 16rpx;
-  border-top: 4rpx solid #7f7f7f;
-  border-right: 4rpx solid #7f7f7f;
+  border-top: 4rpx solid #666666;
+  border-right: 4rpx solid #666666;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
@@ -76,7 +76,7 @@
   width: 510rpx;
   padding-left: 30rpx;
   box-sizing: border-box;
-  color: #a55350;
+  color: #666666;
 }
 
 .orders-footer .orders-footer-btn {

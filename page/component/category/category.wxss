@@ -17,11 +17,12 @@ page, .main {
   line-height: 90rpx;
   text-align: center;
   border-left: 3px solid #fff;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .categroy-left .cate-list.on {
   color: #05a67b;
-  border-color: #05a67b;
+  border-left: 5rpx solid #05a67b;
 }
 
 .categroy-right {
@@ -49,7 +50,7 @@ page, .main {
   line-height: 30rpx;
   padding: 30rpx 0 55rpx;
   text-align: center;
-  color: #05a67b;
+  color: #3c3c3c;
   font-size: 28rpx;
 }
 
@@ -60,7 +61,7 @@ page, .main {
   content: '';
   width: 70rpx;
   height: 4rpx;
-  background: #05a67b;
+  background: #3c3c3c;
 }
 
 .cate-title::after {
@@ -70,7 +71,7 @@ page, .main {
   content: '';
   width: 70rpx;
   height: 4rpx;
-  background: #ab956d;
+  background: #3c3c3c;
 }
 
 .product {
@@ -83,19 +84,26 @@ page, .main {
 
 .product-list {
   display: inline-block;
-  width: 160rpx;
-  height: 160rpx;
+  width: 240rpx;
+  height: 175rpx;
+  background: #ccc;
   text-align: center;
   margin: 0 20rpx 20rpx 0;
   font-size: 24rpx;
+  border-radius: 15rpx;
 }
 
 .product-list image {
-  width: 80rpx;
-  height: 80rpx;
-  margin-bottom: 20rpx;
+  width: 240rpx;
+  height: 175rpx;
+  border-radius: 15rpx;
 }
 
 .product-list:nth-child(3n) {
   margin-right: 0;
+}
+
+.classname {
+  height: 40rpx;
+  line-height: 40rpx;
 }

@@ -5,7 +5,7 @@ Page({
     hasAddress: false,
     total:0,
     orders:[
-      { id: 1, title: '新鲜芹菜 半斤', image:'/image/c4.png',num:4,price:0.01},
+      { id: 1, title: '笔记本电脑', image:'/image/01-1.png',num:1,price:12999},
         // {id:2,title:'素米 500g',image:'/image/s6.png',num:1,price:0.03}
       ]
   },

@@ -1,15 +1,14 @@
 {
   "pages": [
-        "page/component/orderNumber/orderNumber",
-    "page/component/user/user",
-        
-    "page/component/shopCar/shopCar",
     "page/component/index",
+    "page/component/orders/orders",
+    "page/component/details/details",
+    "page/component/shopCar/shopCar",
+    "page/component/user/user",
+    "page/component/orderNumber/orderNumber",
     "page/component/address/address",
     "page/component/category/category",
     "page/component/cart/cart",
-    "page/component/orders/orders",
-    "page/component/details/details",
     "page/component/list/list",
     "page/component/choice/choice"
   ],
