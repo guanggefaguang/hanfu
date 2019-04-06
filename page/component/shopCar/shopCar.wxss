@@ -182,6 +182,7 @@
   color: #333;
   display: block;
   float: left;
+  font-size: 30rpx;
   line-height: 100rpx;
 }
 .mon{
