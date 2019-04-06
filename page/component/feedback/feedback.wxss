@@ -1,0 +1,34 @@
+/* page/component/feedback/feedback.wxss */
+
+.titile{
+  text-align: center;
+  height: 30rpx;
+  line-height: 30rpx;
+    color: #333333;
+  margin-left: 15rpx;
+
+}
+
+.feedback{
+  width: 95%;
+  height: 400rpx;
+  margin: 0 auto;
+  border: 2rpx solid #f2f2f2;
+  border-radius:15rpx; 
+  padding: 10rpx;
+  color: #333333;
+  margin-top: 30rpx;
+}
+
+.confirm{
+  width: 370rpx;
+  height: 80rpx;
+  margin: 0 auto;
+  background: #05a67b;
+  line-height: 80rpx;
+  color: white;
+  text-align: center;
+  font-size: 30rpx;
+  border-radius: 15rpx;
+  margin-top:30rpx; 
+}

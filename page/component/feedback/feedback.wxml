@@ -1,0 +1,5 @@
+<view class='bag'>
+<!-- <text class="titile">用户反馈</text> -->
+<textarea class='feedback' placeholder='请填写用户反馈'></textarea>
+<view class="confirm">确认反馈</view>
+</view>
