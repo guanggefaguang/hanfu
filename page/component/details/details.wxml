@@ -42,8 +42,6 @@
     <textarea placeholder='请在这里输入' class='Zi'></textarea>
   </view>
 
-
-
 </view>
 
 <view class="BottomTab">
@@ -55,7 +53,7 @@
       <image src='../../../image/service.png' class='serviceImg'></image>
     </button>
   </view>
-    <view class='Buy2' bindtap='Gohref2'>加入购物车</view>
+  <view class='Buy2' bindtap='Gohref2'>加入购物车</view>
 
   <button class='Buy' bindtap='Gohref'>立即购买</button>
 </view>

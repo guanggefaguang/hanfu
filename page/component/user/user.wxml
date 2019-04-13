@@ -9,9 +9,9 @@
     <button wx:if="{{!thumb}}" class='userinfo-btn' open-type='getUserInfo' bindgetuserinfo='getuserinfo'>
       {{talk?language.oldfont("登陆"):"登陆"}}
     </button>
-    <!-- <button class="about" open-type="contact">
+    <button class="about" open-type="contact">
       <image src="../../../image/service.png" class='Call'></image>客服
-    </button> -->
+    </button>
 
   </view>
   <view class="address-box">
@@ -23,9 +23,9 @@
       <navigator url="../choice/choice" class='dz'>收货地址</navigator>
     </view>
 
-    <view class="address-manage" open-type="contact">
+    <!-- <view class="address-manage" open-type="contact">
       <navigator class='dz'>客服</navigator>
-    </view>
+    </view> -->
 
 
   <view class="address-manage" open-type="contact">

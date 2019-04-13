@@ -1,12 +1,11 @@
 {
   "pages": [
-    "page/component/shopCar/shopCar",
     "page/component/index",
+    "page/component/shopCar/shopCar",
     "page/component/orders/orders",
     "page/component/details/details",
     "page/component/user/user",
     "page/component/orderNumber/orderNumber",
-    "page/component/address/address",
     "page/component/category/category",
     "page/component/cart/cart",
     "page/component/list/list",

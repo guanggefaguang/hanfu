@@ -47,3 +47,16 @@
 .init{
   color: #666
 }
+/* 技术支持 */
+
+.textmessage {
+  width: 100%;
+  height: 80rpx;
+}
+
+.message {
+  width: 300rpx;
+  display: block;
+  margin: 0 auto;
+  height: 80rpx;
+}
