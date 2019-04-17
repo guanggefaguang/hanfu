@@ -1,5 +1,5 @@
-<view class='bag'>
-<!-- <text class="titile">用户反馈</text> -->
-<textarea class='feedback' placeholder='请填写用户反馈'></textarea>
-<view class="confirm">确认反馈</view>
+<!--page/component/feedback/feedback.wxml-->
+<view class='fk'>
+  <textarea bindinput='bindTextAreaBlur' placeholder="请输入你要反馈的内容" class='message'></textarea>
 </view>
+  <button bindtap='submitClick' class='btn'>提交</button>

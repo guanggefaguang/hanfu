@@ -32,6 +32,17 @@ Page({
       })
     })
   },
+
+// search
+  suo: function (e) {
+    wx.navigateTo({
+      url: './search/search',
+    })
+  },
+
+
+
+
   Godetails(e) {
     wx.navigateTo({
       url: `./details/details?id=${e.currentTarget.dataset.id}`

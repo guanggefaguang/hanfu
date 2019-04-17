@@ -1,4 +1,7 @@
 // page/component/shopCar/shopCar.js
+
+const auth = require('../../../api/auth.js')
+
 Page({
 
   /**
@@ -44,7 +47,33 @@ Page({
     ],
     totalPrice: 0,
     Allchecked: false,
-
+    flag: false
+  },
+  ChangeDe() {
+    let sin = this.data.flag;
+    sin = !sin
+    this.setData({
+      flag: sin
+    })
+  },
+  deleteShop(e) {
+    let params = {
+      id: e.currentTarget.dataset.id
+    }
+    wx.showModal({
+      title: '提示',
+      content: '确定要删除该商品吗？',
+      success: function(sm) {
+        if (sm.confirm) {
+          // 用户点击了确定 可以调用删除方法了
+          auth.deleteCarShop(params).then((res) => {
+            console.log(res)
+          })
+        } else if (sm.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
   },
   checkboxChange(e) {
     let mink = 0

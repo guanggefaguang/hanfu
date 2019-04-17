@@ -1,4 +1,18 @@
 <view class="main">
+  <!-- 搜索框 -->
+
+  <view class='page_row' bindtap="suo">
+    <view class="search">
+      <view class="df search_arr">
+        <icon class="searchcion" size='20' type='search'></icon>
+        <input class="" disabled placeholder="请输入关键字" value="{{searchValue}}" />
+      </view>
+    </view>
+    <!-- <view class='sousuo'>搜索</view> -->
+  </view>
+  <!-- end -->
+
+  <!-- banner -->
   <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true" bindtap="goview" class='swiper-box' indicator-color="{{beforeColor}}" indicator-active-color="{{afterColor}}">
     <block wx:for="{{imgUrls}}" wx:key="{{index}}">
       <swiper-item>
@@ -6,14 +20,30 @@
       </swiper-item>
     </block>
   </swiper>
+  <!-- end -->
+
+<!-- 注册会员 -->
+
+
+
+
+<!-- end -->
+
+
+
+  <!-- 最新折扣 -->
   <view class='Home_title'>
-    <text class='Home_title'>最新推荐</text>
+    <text class='Home_title'>-- 最新折扣 --</text>
     <view class='xie'></view>
   </view>
+  <!-- end -->
+
+
+  <!-- 最新折扣 -->
   <view class='shop'>
     <view url='./details/details' wx:for="{{Shop}}" wx:key bindtap='Godetails' data-id='{{item.id}}'>
       <view class='shopItem'>
-        <image src="{{item.thumb}}" class='ShopImg' />
+        <image src="image/05.png" class='ShopImg' />
         <view class='Name'>
           <text class='Title'>{{item.title}}</text>
         </view>
@@ -25,5 +55,101 @@
     </view>
 
   </view>
+  <!-- end -->
+
+
+
+
+
+
+
+  <!-- 人气推荐 -->
+  <view class='Home_title'>
+    <text class='Home_title'>-- 人气推荐 --</text>
+    <view class='xie'></view>
+  </view>
+  <!-- end -->
+
+
+  <!-- 人气推荐 -->
+  <view class='shop'>
+    <view url='./details/details' wx:for="{{Shop}}" wx:key bindtap='Godetails' data-id='{{item.id}}'>
+      <view class='shopItem'>
+        <image src="image/05.png" class='ShopImg' />
+        <view class='Name'>
+          <text class='Title'>{{item.title}}</text>
+        </view>
+        <view class='Number'>
+          <text class="Color">￥{{item.price}}</text>
+          <text>{{item.buy_num}}人付款</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <!-- end -->
+
+
+
+
+
+
+  <!-- 最新推荐 -->
+  <view class='Home_title'>
+    <text class='Home_title'>-- 最新推荐 --</text>
+    <view class='xie'></view>
+  </view>
+  <!-- end -->
+
+
+  <!-- 商品列表 -->
+  <view class='shop'>
+    <view url='./details/details' wx:for="{{Shop}}" wx:key bindtap='Godetails' data-id='{{item.id}}'>
+      <view class='shopItem'>
+        <image src="image/05.png" class='ShopImg' />
+        <view class='Name'>
+          <text class='Title'>{{item.title}}</text>
+        </view>
+        <view class='Number'>
+          <text class="Color">￥{{item.price}}</text>
+          <text>{{item.buy_num}}人付款</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <!-- end -->
+
+
+
+
+
+
+
+  <!-- 潮牌推荐 -->
+  <view class='Home_title'>
+    <text class='Home_title'>-- 潮牌推荐  --</text>
+    <view class='xie'></view>
+  </view>
+  <!-- end -->
+
+
+  <!-- 潮牌推荐 -->
+  <view class='shop'>
+    <view url='./details/details' wx:for="{{Shop}}" wx:key bindtap='Godetails' data-id='{{item.id}}'>
+      <view class='shopItem'>
+        <image src="image/05.png" class='ShopImg' />
+        <view class='Name'>
+          <text class='Title'>{{item.title}}</text>
+        </view>
+        <view class='Number'>
+          <text class="Color">￥{{item.price}}</text>
+          <text>{{item.buy_num}}人付款</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+  <!-- end -->
 
 </view>

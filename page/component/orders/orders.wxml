@@ -13,15 +13,59 @@
   </view>
 
 
-  <view class="orders-address">
-    <text class="orders-address-name">收货人: {{address.name}}</text>
+  <!-- 配送方式 -->
+
+    <!-- <button class='yjdj' bindtap='ChangColor'style='color:{{pageBackgroundColor}}'>邮寄到家</button>
+  <button class='smzt' bindtap='clickMe'style='color:{{pageBackgroundColor2}}'>上门自提</button> -->
+
+
+
+  <view class='Delivery message'>
+  <text class='mode'>配送方式：</text>
+  <view class="swiper-tab">
+      <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">邮寄到家</view>
+      <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">上门自提</view>
+      
+  </view>
+
+<swiper current="{{currentTab}}" duration="300"  bindchange="swiperTab">
+    <swiper-item ><view>邮寄到家11</view></swiper-item>
+    <swiper-item><view>上门自提22</view></swiper-item>
+</swiper>
+
+</view>
+
+
+
+
+
+
+
+  <!-- end -->
+
+  <!-- 信息填写 -->
+
+  <!-- <view class='Delivery message'>
+    <text class="orders-address-name ">收货人: {{address.name}}</text>
+    <text class="orders-address-phone">电话: {{address.phone}}</text>
+    <view class="orders-address-detail">{{address.add}}</view>
+</view> -->
+
+  <!-- <view class='Delivery message2'>
+<text class='mode'></text>
+  <input placeholder='请输入收件人手机号' hidden="{{hiddenName}}"></input>
+</view> -->
+
+
+  <view class="orders-address" hidden="{{hiddenName}}">
+    <text class="orders-address-name ">收货人: {{address.name}}</text>
     <text class="orders-address-phone">电话: {{address.phone}}</text>
     <view class="orders-address-detail">{{address.add}}</view>
   </view>
-  
+
 </view>
 
 <view class="orders-footer">
-    <view class="orders-footer-total">付款合计：￥{{total}}</view>
-    <view class="orders-footer-btn" bindtap="toPay">确认付款</view>
-  </view>
+  <view class="orders-footer-total">付款合计：￥{{total}}</view>
+  <view class="orders-footer-btn" bindtap="toPay">确认付款</view>
+</view>

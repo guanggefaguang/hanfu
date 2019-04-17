@@ -1,34 +1,25 @@
-/* page/component/feedback/feedback.wxss */
-
-.titile{
-  text-align: center;
-  height: 30rpx;
-  line-height: 30rpx;
-    color: #333333;
-  margin-left: 15rpx;
-
-}
-
-.feedback{
-  width: 95%;
-  height: 400rpx;
-  margin: 0 auto;
-  border: 2rpx solid #f2f2f2;
-  border-radius:15rpx; 
-  padding: 10rpx;
-  color: #333333;
-  margin-top: 30rpx;
-}
-
-.confirm{
-  width: 370rpx;
-  height: 80rpx;
-  margin: 0 auto;
-  background: #05a67b;
-  line-height: 80rpx;
-  color: white;
-  text-align: center;
+.fk {
+  width: 100%;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
   font-size: 30rpx;
-  border-radius: 15rpx;
-  margin-top:30rpx; 
+}
+
+.message {
+  width: 90%;
+  height: 300rpx;
+  border: 2rpx solid #cccc;
+  margin: 0 auto;
+  border-radius: 10rpx;
+  padding: 10rpx;
+  background: #f5f5f5;
+  color: #666;
+}
+
+.btn {
+  width: 450rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background: #05a67b;
+  color: #fff;
 }

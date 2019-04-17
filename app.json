@@ -1,24 +1,26 @@
 {
   "pages": [
-    "page/component/index",
-    "page/component/shopCar/shopCar",
-    "page/component/orders/orders",
+        "page/component/index",
+
     "page/component/details/details",
-    "page/component/user/user",
+    "page/component/orders/orders",
+    "page/component/feedback/feedback",
+    "page/component/search/search",
+    "page/component/about/about",
     "page/component/orderNumber/orderNumber",
+    "page/component/shopCar/shopCar",
+    "page/component/user/user",
+    "page/component/address/address",
     "page/component/category/category",
     "page/component/cart/cart",
     "page/component/list/list",
-    "page/component/choice/choice",
-    "page/component/feedback/feedback",
-    "page/component/about/about"
+    "page/component/choice/choice"
   ],
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "首页",
     "navigationBarBackgroundColor": "#05a67b",
-    "backgroundColor": "#f5f5f5",
-    "enablePullDownRefresh": true
+    "backgroundColor": "#f5f5f5"
   },
   "tabBar": {
     "color": "#b7b7b7",

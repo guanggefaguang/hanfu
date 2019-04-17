@@ -1,23 +1,68 @@
 // page/component/orders/orders.js
+
+
+
+
 Page({
-  data:{
-    address:{},
+  data: {
+    address: {},
     hasAddress: false,
-    total:0,
-    orders:[
-      { id: 1, title: '笔记本电脑', image:'/image/01-1.png',num:1,price:12999},
-        // {id:2,title:'素米 500g',image:'/image/s6.png',num:1,price:0.03}
-      ]
+    total: 0,
+
+    // tab
+    currentTab: 0,
+
+
+    orders: [{
+        id: 1,
+        title: '笔记本电脑',
+        image: '/image/01-1.png',
+        num: 1,
+        price: 12999
+      },
+    ],
+    // 配送状态：
+    onLoad: function (options) {
+      // 页面初始化 options为页面跳转所带来的参数
+
+    },
+        // 配送状态：end
+
+
+    
   },
+
+  // 选择配送方式
+  //滑动切换
+  swiperTab: function (e) {
+    var that = this;
+    that.setData({
+      currentTab: e.detail.current
+    });
+  },
+  //点击切换
+  clickTab: function (e) {
+    var that = this;
+    if (this.data.currentTab === e.target.dataset.current) {
+      return false;
+    } else {
+      that.setData({
+        currentTab: e.target.dataset.current
+      })
+    }
+  },
+    // 选择配送方式 end
+
+
 
   onReady() {
     this.getTotalPrice();
   },
-  
-  onShow:function(){
+
+  onShow: function() {
     const self = this;
     wx.getStorage({
-      key:'address',
+      key: 'address',
       success(res) {
         self.setData({
           address: res.data,
@@ -33,7 +78,7 @@ Page({
   getTotalPrice() {
     let orders = this.data.orders;
     let total = 0;
-    for(let i = 0; i < orders.length; i++) {
+    for (let i = 0; i < orders.length; i++) {
       total += orders[i].num * orders[i].price;
     }
     this.setData({
@@ -45,7 +90,7 @@ Page({
     wx.showModal({
       title: '提示',
       content: '本系统只做演示，支付系统已屏蔽',
-      text:'center',
+      text: 'center',
       complete() {
         wx.switchTab({
           url: '/page/component/user/user'

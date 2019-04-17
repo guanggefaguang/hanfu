@@ -9,6 +9,14 @@
       </block>
     </swiper>
 
+  <!-- share -->
+  <!-- <view class='share' bindtap='share' open-type="share">
+  <image src='../../../image/share.png'></image>
+  </view> -->
+
+  <!-- share end -->
+
+
     <view class="goods-title">{{goods.title}}</view>
     <view class="goods-price">
       <!-- <text wx:if="{{goods.none}}" class='Have'>有货</text>
@@ -30,17 +38,19 @@
 
     <image src='../../../image/message.png' class='Dtal' />
 
-    <view class='Home_title'>
+    <!-- <view class='Home_title'>
       <text class='Home_title'>填写信息</text>
       <view class='xie'></view>
-    </view>
+    </view> -->
 
-    <view class='Tile'>
+    <!-- <view class='Tile'>
       *如果需要您的文字信息，请填写到下方。如照片信息其他等，请在付款之后联系客服发送。
     </view>
 
-    <textarea placeholder='请在这里输入' class='Zi'></textarea>
+    <textarea placeholder='请在这里输入' class='Zi'></textarea> -->
   </view>
+
+
 
 </view>
 
@@ -53,7 +63,7 @@
       <image src='../../../image/service.png' class='serviceImg'></image>
     </button>
   </view>
-  <view class='Buy2' bindtap='Gohref2'>加入购物车</view>
+    <view class='Buy2' bindtap='Gohref2'>加入购物车</view>
 
   <button class='Buy' bindtap='Gohref'>立即购买</button>
 </view>

@@ -22,6 +22,9 @@ Page({
     wx.getUserInfo({
       success: function(res) {
         console.log(res)
+        wx.setStorageSync(
+          "wxname", res.userInfo.nickName
+        )
         self.setData({
           thumb: res.userInfo.avatarUrl,
           nickname: res.userInfo.nickName

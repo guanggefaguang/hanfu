@@ -1,7 +1,7 @@
 //addpp.js
+const auth = require('./api/auth.js')
 App({
   globalData: {
-    appid: 'wx156a78adcd18d3ad',
     openid: 0,
     code: 0
   },
@@ -16,25 +16,15 @@ App({
       success: res => {
         console.log(res.code)
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
-        if (res.code == '') {
+        if (res.code !== '') {
           //获取openId
-          wx.request({
-            url: 'https://api.weixin.qq.com/sns/jscode2session',
-            data: {
-              appid: 'wx5c006c821ce5d383',
-              secret: '9beb6a6e42a9780d37e4b8ef786466db',
-              grant_type: 'authorization_code',
-              js_code: res.code
-            },
-            method: 'GET',
-            header: {
-              'content-type': 'application/json'
-            },
-            success: function(openIdRes) {
-              console.info("登录成功返回的openId：" + openIdRes.data.openid);
-              wx.setStorageSync('openId', openIdRes.data.openid)
-              // 判断openId是否获取成功
-            }
+          let params = {
+            code: res.code
+          }
+          auth.getOpenid(params).then((res) => {
+            wx.setStorageSync(
+              "openId", 'fgjhklljhgyutfygvhbjnkjgyf'
+            )
           })
         }
       }

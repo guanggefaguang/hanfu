@@ -3,12 +3,13 @@
 
 
   <!-- 切换栏 -->
-  <view class="swiper-tab">
-    <block wx:for="{{swipertab}}" wx:key="sptab">
-      <view class="swiper-tab-list {{currtab == item.index ? 'on' : ''}}" data-current="{{item.index}}" bindtap="tabSwitch">{{item.name}}</view>
-    </block>
+  <view class='top'>
+    <view class="swiper-tab">
+      <block wx:for="{{swipertab}}" wx:key="sptab">
+        <view class="swiper-tab-list {{currtab == item.index ? 'on' : ''}}" data-current="{{item.index}}" bindtap="tabSwitch">{{item.name}}</view>
+      </block>
+    </view>
   </view>
-
   <swiper current="{{currtab}}" class="swiper-box" duration="300" style="height:{{deviceH-31}}px" bindchange="tabChange">
     <!-- 全部 -->
     <swiper-item>
@@ -24,10 +25,12 @@
             </view>
             <view class="productInfo">
               <view class="productTitle">下单时间: {{item.time}}</view>
-              <view><text class="productPrice">订单号：{{item.order}}</text></view>
-              <view><text class="productPrice2" wx:if="{{item.falg == 1}}">快递单号：{{item.status}}</text></view>
-
-
+              <view>
+                <text class="productPrice">订单号：{{item.order}}</text>
+              </view>
+              <view>
+                <text class="productPrice2" wx:if="{{item.falg == 1}}">快递单号：{{item.status}}</text>
+              </view>
             </view>
           </view>
           <view class="productCount">
@@ -50,12 +53,14 @@
             <view class="productImg">
               <image src="{{item.url}}" background-size="cover"></image>
             </view>
-              <view class="productInfo">
+            <view class="productInfo">
               <view class="productTitle">下单时间: {{item.time}}</view>
-              <view><text class="productPrice">订单号：{{item.order}}</text></view>
-              <view><text class="productPrice2" wx:if="{{item.falg == 1}}">快递单号：{{item.status}}</text></view>
-
-
+              <view>
+                <text class="productPrice">订单号：{{item.order}}</text>
+              </view>
+              <view>
+                <text class="productPrice2" wx:if="{{item.falg == 1}}">快递单号：{{item.status}}</text>
+              </view>
             </view>
           </view>
           <view class="productCount">
@@ -80,8 +85,12 @@
             </view>
             <view class="productInfo">
               <view class="productTitle">下单时间: {{item.time}}</view>
-              <view><text class="productPrice">订单号：{{item.order}}</text></view>
-              <view><text class="productPrice2" wx:if="{{item.falg == 1}}">快递单号：{{item.status}}</text></view>
+              <view>
+                <text class="productPrice">订单号：{{item.order}}</text>
+              </view>
+              <view>
+                <text class="productPrice2" wx:if="{{item.falg == 1}}">快递单号：{{item.status}}</text>
+              </view>
             </view>
           </view>
           <view class="productCount">
@@ -99,6 +108,3 @@
 
 
 </view>
-
-
-

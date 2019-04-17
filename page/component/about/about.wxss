@@ -1,1 +1,49 @@
 /* page/component/about/about.wxss */
+
+.bag {
+  background: #fff;
+  height: 100%;
+}
+
+.logoimg {
+  width: 100%;
+  height: 230rpx;
+  display: flex;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+}
+
+.logo {
+  width: 460rpx;
+  height: 230rpx;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 40rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  padding-top: 30rpx;
+  padding-bottom: 40rpx;
+  color: #666666;
+}
+.textmessage {
+  display:block;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 30rpx;
+  line-height:60rpx;
+  color: #666666;
+}
+.tt{
+    text-indent: 30rpx;
+
+  padding-bottom:30rpx;
+
+}
+
+.email{
+  color: #58a5d3;
+}
