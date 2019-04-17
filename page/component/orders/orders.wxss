@@ -104,10 +104,11 @@
 
 /* 运送方式 */
 
-.mode {
+.mode,.mode2 {
   display: flex;
   line-height: 80rpx;
   margin-left: 30rpx;
+  color: #434343
 }
 
 .Delivery {
@@ -180,4 +181,19 @@
 
 swiper {
   text-align: center;
+}
+
+/* 备注信息 */
+.modemessage{
+  border:1rpx solid #666;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10rpx;
+
+
+}
+.mode2{
+  font-size: 32rpx;
+  color: #666;
+  margin-left: 0;
 }

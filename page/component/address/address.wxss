@@ -1,7 +1,7 @@
 @import '../../common/common.wxss';
 
-
-
+.form-box {
+}
 
 .form-box input {
   height: 90rpx;

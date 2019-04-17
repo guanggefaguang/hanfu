@@ -22,19 +22,9 @@ Page({
       id: ''
     }
   },
-  // 付款
-  Gohref() {
-    // wx.showModal({
-    //   title: '提示',
-    //   content: '支付功能还未开放，敬请期待',
-    //   showCancel: false
-    // })
-    wx.navigateTo({
-      url: '../orders/orders',
-    })
-  },
+
   // 进入购物车
-  Gohref2() {
+  Gohref() {
     let params = {
       openid: wx.getStorageSync('openId'),
       product_id: this.data.shopId,
@@ -51,7 +41,17 @@ Page({
 
   },
 
-
+  // 付款
+  Gohref2() {
+    // wx.showModal({
+    //   title: '提示',
+    //   content: '支付功能还未开放，敬请期待',
+    //   showCancel: false
+    // })
+    wx.navigateTo({
+      url: '../orders/orders',
+    })
+  },
 
 
 
@@ -60,18 +60,12 @@ Page({
 
 
 onShareAppMessage: function(option){
-
     console.log(option);
-
     let obj = {
-
       title: '商品标题',
-
       path: 'pages/index/index',
       imageUrl: ''
-
     };
-
     return util.shareEvent(option, obj);
 
   },

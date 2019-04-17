@@ -1,9 +1,8 @@
 {
   "pages": [
-        "page/component/index",
-
-    "page/component/details/details",
+    "page/component/index",
     "page/component/orders/orders",
+    "page/component/details/details",
     "page/component/feedback/feedback",
     "page/component/search/search",
     "page/component/about/about",

@@ -14,34 +14,33 @@ Page({
 
 
     orders: [{
-        id: 1,
-        title: '笔记本电脑',
-        image: '/image/01-1.png',
-        num: 1,
-        price: 12999
-      },
-    ],
+      id: 1,
+      title: '笔记本电脑',
+      image: '/image/01-1.png',
+      num: 1,
+      price: 12999
+    }, ],
     // 配送状态：
-    onLoad: function (options) {
+    onLoad: function(options) {
       // 页面初始化 options为页面跳转所带来的参数
 
     },
-        // 配送状态：end
+    // 配送状态：end
 
 
-    
+
   },
 
   // 选择配送方式
   //滑动切换
-  swiperTab: function (e) {
+  swiperTab: function(e) {
     var that = this;
     that.setData({
       currentTab: e.detail.current
     });
   },
   //点击切换
-  clickTab: function (e) {
+  clickTab: function(e) {
     var that = this;
     if (this.data.currentTab === e.target.dataset.current) {
       return false;
@@ -51,7 +50,7 @@ Page({
       })
     }
   },
-    // 选择配送方式 end
+  // 选择配送方式 end
 
 
 
