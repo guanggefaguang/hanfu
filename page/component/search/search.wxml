@@ -1,0 +1,79 @@
+<view class='bag'>
+
+<!-- shearch -->
+<view class='shasbg'>
+  <view class='searview'>
+    <icon class='icon-search'></icon>
+    <view class='searall'>
+      <input type='text' placeholder="搜索你想要的商品" value='{{keyWord}}' confirm-type='search' focus="{{autoFocus}}" bindconfirm='goSearch' bindblur="blursearch" bindinput='inputsearch' bindfocus="inputfocus"></input>
+      <icon class='icon-cancel' bindtap='cancelword' wx:if='{{keyWord}}'></icon>
+    </view>
+    <button bindtap='searchBtn'>搜索</button>
+  </view>
+</view>
+<!-- end -->
+
+
+
+
+
+<!-- 商品列表 -->
+<view class='shopConter'>
+
+  <view class='shop'>
+    <view url='./details/details'   bindtap='Godetails' >
+      <view class='shopItem'>
+        <image src="../../../image/05.png" class='ShopImg' />
+        <view class='Name'>
+          <text class='Title'>超薄笔记本 </text>
+        </view>
+        <view class='Number'>
+          <text class="Color">￥10900</text>
+          <text>622人付款</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+
+
+
+ <view class='shop'>
+    <view url='./details/details'   bindtap='Godetails' >
+      <view class='shopItem'>
+        <image src="../../../image/02.png" class='ShopImg' />
+        <view class='Name'>
+          <text class='Title'>MacBook pro</text>
+        </view>
+        <view class='Number'>
+          <text class="Color">￥15999</text>
+          <text>972人付款</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+</view>
+ 
+<!-- end -->
+
+
+  <!-- <view class='shop'>
+    <view url='./details/details' wx:for="{{Shop}}" wx:key bindtap='Godetails' data-id='{{item.id}}'>
+      <view class='shopItem'>
+        <image src="../../../image/05.png" class='ShopImg' />
+        <view class='Name'>
+          <text class='Title'>{{item.title}}</text>
+        </view>
+        <view class='Number'>
+          <text class="Color">￥{{item.price}}</text>
+          <text>{{item.buy_num}}人付款</text>
+        </view>
+      </view>
+    </view>
+
+  </view> -->
+<!-- end -->
+</view>
